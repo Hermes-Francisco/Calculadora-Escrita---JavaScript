@@ -60,6 +60,6 @@ function calculo(){
     if(operation == "dividido por") num.value = interpretar(n1 / n2);
 }
 function regras(){
-    alert("Você pode escrever '10,5 vezes dois'; 'dez vírgula cinco vezes 2'; ou 'dez vírgula cinco vezes dois', por exemplo. \nO maior número aceito é 999,99 e o menor é -999,99. \n"+
+    alert("Você pode escrever '10,5 vezes 2'; '10,5 vezes dois'; 'dez vírgula cinco vezes 2'; ou 'dez vírgula cinco vezes dois', por exemplo. \n\nO maior número aceito é 999,99 e o menor é -999,99. \n\n"+
     "A precisão máxima é de duas casas decimais - numeros com mais casas decimais são arredondados.\n\nProgramado por: Hermes Francisco. Data: 14/03/2020")
 }
