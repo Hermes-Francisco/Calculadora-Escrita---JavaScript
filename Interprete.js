@@ -76,8 +76,12 @@ class Interprete{
     toExtenso(numero){
        
         if(isNaN(parseInt(numero))) return "erro";
-        if(numero > 999.99 || numero < -999.99) return numero + " (fora do alcance do intérprete)"
-
+        if(numero > 999.99 || numero < -999.99) {
+            numero = numero.toString();
+            if(numero.split(".").length > 1)numero = numero.split(".")[0] + "," + numero.split(".")[1]; 
+            return numero + " (fora do alcance do intérprete)";
+        }
+  
         var v = ""
         if(parseInt(numero) != parseFloat(numero)){
             numero = parseFloat(numero);
