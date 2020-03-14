@@ -86,7 +86,6 @@ class Interprete{
         if(parseInt(numero) != parseFloat(numero)){
             numero = parseFloat(numero);
             v = parseFloat(numero.toFixed(2));
-            console.log("calc "+ v)
             v = v.toString().split(".");
         }
         return this.toExtenso1(numero) + ((v != "")?" vírgula " + ((v[1].substring(0,1) == "0")? "zero " : "") 
