@@ -93,7 +93,7 @@ class Interprete{
         var frase = "";
         if (numero < 0){frase = "menos "; numero *= -1;} 
 
-        if(numero == 100) return frase + "cem";
+        if(parseInt(numero) == 100) return frase + "cem";
 
         var centenas = parseInt(numero / 100);
         var dezenas = parseInt((numero % 100) / 10);
