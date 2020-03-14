@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script src='Interprete.js' charset="utf-8"></script>
+        <link rel='stylesheet' href='estilo.css' />
+        <title>Calculadora Escrita</title>
+    </head>
+    
+<body class='blue'>
+    <div id='central'>
+        <form id='formulario' onsubmit='calculo()' style="width: 100%" >
+            <input id = 'texto' type='text' style="width: 100%" />
+        </form>
+    <table><tr><td width='8%'></td><td>
+    <button onclick='soma()'>somar</button>
+    <button onclick='subitracao()'>subtrair</button>
+    <button onclick='multiplicacao()'>multiplicar</button>
+    <button onclick='divisao()'>dividir</button>
+    <button onclick='calculo()'>resultado</button>
+        
+    </td><td width='4%'></td></tr></table>
+    <button onclick="apagar()" style="margin-left: 35%;">Limpar</button>
+    <button onclick="regras()">Regras</button
+
+    </div>
+</body>        
+</html>
+<script src='calculadora.js' charset="utf-8"></script>
