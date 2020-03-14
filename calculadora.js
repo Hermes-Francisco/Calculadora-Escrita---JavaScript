@@ -12,7 +12,7 @@ function interpretar(numero){
     return (!isNaN(parseInt(numero)))? iniMaiuscula(i.toExtenso(numero)) : i.toAlgarismo(numero);
 }
 
-function apagar(){num.value = ""}
+function apagar(){num.value = ""; num.focus();}
 function soma(){num.value += " mais "; num.focus()}
 function subitracao(){num.value += " menos "; num.focus()}
 function multiplicacao(){num.value += " vezes "; num.focus()}
@@ -51,6 +51,8 @@ function calculo(){
     if (n2.split(",").length > 1) n2 = n2.split(",")[0] + "." + n2.split(",")[1];
     if (isNaN(n1)) n1 = interpretar(n1);
     if (isNaN(n2)) n2 = interpretar(n2);
+    n1=parseFloat(n1);
+    n2=parseFloat(n2);
 
     if(operation == "mais") num.value = interpretar(n1 + n2);
     if(operation == "menos") num.value = interpretar(n1 - n2);
